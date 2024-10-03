@@ -1,5 +1,5 @@
 
-# Bengal Cat
+# Bengal Cats
 
 ## Overview:
 Bengal Cats is a React-based web application that allows users to search, browse, and explore different cat breeds. It fetches data from a cat breed API and displays it in a user-friendly way, with functionality like search, pagination, and detailed views for each breed. This project uses Material-UI for styling and ensures a responsive design that looks great on all devices.
@@ -56,6 +56,8 @@ The project is organized in a modular and scalable way, with each component resp
 
 ## Code Structure:
 
+```bash
+Copy code
 src/
 │
 ├── components/
@@ -72,9 +74,6 @@ src/
 │
 ├── context/
 │   └── DataContext.jsx       # Global state management for cat data, pagination, and search.
-│ 
-├── pages/
-│   └── HomePage.jsx       # Home page for showing cat list, search and navigation.
 │
 ├── services/
 │   └── api.js                # API request handler using Axios to fetch cat data.
@@ -85,5 +84,3 @@ src/
 ├── App.jsx                   # Main component where all pages and routes are brought together.
 ├── index.js                  # Entry point for React, renders the App.
 └── README.md                 # Documentation file.
-
-
