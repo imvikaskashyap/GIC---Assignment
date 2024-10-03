@@ -3,15 +3,16 @@ import { DataContext } from "../../context/DataContext";
 import { Grid } from "@mui/material";
 import CatDetail from "../CatDetails/CatDetails";
 import CatCard from "../CatCard/CatCard";
+import Loader from "../../utils/Loader/Loader";
 
 const CatList = () => {
   const { data, loading, error, selectedCat } = useContext(DataContext);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loader/>;
   if (error) return <div>{error}</div>;
 
   return (
-    <div>
+    <div style={{marginLeft:"30px"}}>
       {selectedCat ? (
         <CatDetail />
       ) : (
