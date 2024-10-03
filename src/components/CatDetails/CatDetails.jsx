@@ -9,15 +9,28 @@ import {
   Link,
 } from "@mui/material";
 import { DataContext } from "../../context/DataContext";
+import { ChevronLeftIcon } from "lucide-react";
 
 const CatDetail = () => {
-  const { selectedCat } = useContext(DataContext);
+  const { selectedCat, setSelectedCat } = useContext(DataContext);
 
   if (!selectedCat)
     return <Typography variant="h6">No cat selected!</Typography>;
 
+  const handleBack = () => {
+    setSelectedCat(null);
+  };
+
   return (
     <Box sx={{ p: 4 }}>
+      <Button
+        variant="contained"
+        color="inherit"
+        onClick={handleBack}
+        sx={{ mb: 2 }}
+      >
+        <ChevronLeftIcon />
+      </Button>
       <Card
         sx={{
           display: "flex",

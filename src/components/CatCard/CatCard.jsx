@@ -20,9 +20,10 @@ export default function CatCard({ cat }) {
       <CardActionArea onClick={() => setSelectedCat(cat)}>
         <CardMedia
           component="img"
-          height="140"
+          height="300"
           image={cat.url}
           alt={cat.breeds[0]?.name || "Cat"}
+          style={{ objectFit: "cover" }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

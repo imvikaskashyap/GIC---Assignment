@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export const fetchData = async (endpoint, options = {}) => {
   try {
     const response = await axios.get(
