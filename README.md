@@ -1,58 +1,61 @@
-# Bengal Cats
 
-## Overview
+# Bengal Cat
 
-  Bengal Cats is a React-based web application that allows users to search, browse, and explore different cat breeds. It fetches data from a cat breed API and displays it in a user-friendly way, with functionality like search, pagination, and detailed views for each breed. This project uses Material-UI for styling and ensures a responsive design that looks great on all devices.
-
-## Setup Instructions
+## Overview:
+Bengal Cats is a React-based web application that allows users to search, browse, and explore different cat breeds. It fetches data from a cat breed API and displays it in a user-friendly way, with functionality like search, pagination, and detailed views for each breed. This project uses Material-UI for styling and ensures a responsive design that looks great on all devices.
+## Setup Instructions:
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/cat-breed-explorer.git
-cd cat-breed-explorer
+
+git clone https://github.com/imvikaskashyap/GIC---Assignment.git
 
 ### 2. Install Dependencies
 Run the following command to install all required dependencies:
-```bash
-Copy code
+
 npm install
 
 ###  3. Environment Setup
-Create a .env file in the root directory and configure your API settings (if applicable):
-```bash
-Copy code
+Create a .env file in the root directory.
+
 REACT_APP_API_URL=https://api.thecatapi.com/v1
 REACT_APP_API_KEY=your-cat-api-key
 
-4. Start the Application
+### 4. Start the Application
 Run the following command to start the app:
-```bash
-Copy code
+
 npm start
+
 The app should be available at http://localhost:3000.
 
-Dependencies
+## Dependencies:
 Below is a list of the key dependencies used in this project:
 
-React: A JavaScript library for building user interfaces.
-Material-UI: A popular UI framework for React that provides pre-built components with styling.
-Axios: A promise-based HTTP client used for API requests.
-Lucide-React: A modern icon library for React, providing various icons.
-React Router: For handling client-side routing (if needed in future expansion).
-Features
+1. React: A JavaScript library for building user interfaces.
+
+2. Material-UI: A popular UI framework for React that provides pre-built components with styling.
+
+3. Axios: A promise-based HTTP client used for API requests.
+
+4. Lucide-React: A modern icon library for React, providing various icons.
+
+5. React Router: For handling client-side routing.
+
+
+## Features:
 Search Functionality: Users can search for cat breeds by typing into the search bar. The results dynamically update based on the query.
+
 Pagination: Navigate between pages of cat breed results. The pagination controls let users move to the next or previous page, and the app displays the current page number.
+
 Detailed View: Clicking on a specific breed shows detailed information about the selected breed, including its image and other details.
+
 Responsive Design: The app is fully responsive and adjusts to different screen sizes.
 Error Handling: Error messages are displayed if there's a problem with data fetching or API requests.
-
-
 Code Structure
 
 The project is organized in a modular and scalable way, with each component responsible for a specific piece of functionality. Below is an overview of the code structure:
 
-bash
-Copy code
+## Code Structure:
+
 src/
 │
 ├── components/
@@ -69,6 +72,9 @@ src/
 │
 ├── context/
 │   └── DataContext.jsx       # Global state management for cat data, pagination, and search.
+│ 
+├── pages/
+│   └── HomePage.jsx       # Home page for showing cat list, search and navigation.
 │
 ├── services/
 │   └── api.js                # API request handler using Axios to fetch cat data.

@@ -8,6 +8,8 @@ import Loader from "../../utils/Loader/Loader";
 const CatList = () => {
   const { data, loading, error, selectedCat } = useContext(DataContext);
 
+  console.log(data);
+
   if (loading) return <Loader/>;
   if (error) return <div>{error}</div>;
 

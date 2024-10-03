@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
   const [selectedCat, setSelectedCat] = useState(null);
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(6);
   const [totalCats, setTotalCats] = useState(0);
 
   const loadData = async () => {
