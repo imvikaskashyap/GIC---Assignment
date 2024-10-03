@@ -3,6 +3,12 @@
 
 ## Overview:
 Bengal Cats is a React-based web application that allows users to search, browse, and explore different cat breeds. It fetches data from a cat breed API and displays it in a user-friendly way, with functionality like search, pagination, and detailed views for each breed. This project uses Material-UI for styling and ensures a responsive design that looks great on all devices.
+
+![Cat list](./src/assets/readme-images/ss1.png)
+![Cat list2](./src/assets/readme-images/ss2.png)
+![Cat Details](./src/assets/readme-images/ss3.png)
+
+
 ## Setup Instructions:
 
 ### 1. Clone the Repository
