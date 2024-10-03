@@ -74,7 +74,8 @@ src/
 │
 ├── context/
 │   └── DataContext.jsx       # Global state management for cat data, pagination, and search.
-│
+├── pages/
+│   └── HomePage.jsx       # Home page for showing cat list, search and navigation.
 ├── services/
 │   └── api.js                # API request handler using Axios to fetch cat data.
 │
